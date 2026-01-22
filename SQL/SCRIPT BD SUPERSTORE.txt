@@ -1,0 +1,81 @@
+
+
+CREATE TABLE DimClientes (
+    CustomerID VARCHAR(255) PRIMARY KEY,
+    CustomerName VARCHAR(255),
+    Segment VARCHAR(255),
+    Country VARCHAR(255),
+    City VARCHAR(255),
+    State VARCHAR(255),
+    PostalCode VARCHAR(255),
+    Region VARCHAR(255)
+);
+
+CREATE TABLE DimProductos (
+    ProductID VARCHAR(255) PRIMARY KEY,
+    Category VARCHAR(255),
+    SubCategory VARCHAR(255),
+    ProductName VARCHAR(255)
+);
+
+CREATE TABLE DimFecha (
+    DateIDOrder VARCHAR(255) PRIMARY KEY,
+	DateIDShip VARCHAR(255),
+    DateOrder DATE,
+	DateShip DATE,
+    YearOrder INT,
+    QuarterOrder INT,
+    MonthOrder INT,
+	MesOrdNom VARCHAR(255),
+	MesShipNom VARCHAR(255),
+    DayOrder INT,
+	YearShip INT,      
+    QuarterShip INT,
+    MonthShip INT,
+    DayShip INT
+	
+
+);
+
+CREATE TABLE DimVendedores (
+    id_seller VARCHAR(255) PRIMARY KEY,
+    name_seller VARCHAR(255)
+);
+
+CREATE TABLE DimOrder (
+ OrderID VARCHAR(255) primary key,
+ OrderDate VARCHAR(255) ,
+ ShipDate VARCHAR(255) ,
+ ShipMode Varchar(255),
+
+ );
+
+CREATE TABLE HechosVentas (
+    FactID INT IDENTITY PRIMARY KEY,
+    OrderID VARCHAR(255),
+    ProductID VARCHAR(255),
+    CustomerID VARCHAR(255),
+	DateIDOrder VARCHAR(255),
+    id_seller VARCHAR(255),
+    Sales DECIMAL(10, 2),
+    Quantity INT,
+    Discount DECIMAL(3, 2),
+    Profit DECIMAL(10, 2),
+    FOREIGN KEY (CustomerID) REFERENCES DimClientes(CustomerID),
+    FOREIGN KEY (ProductID) REFERENCES DimProductos(ProductID),
+    FOREIGN KEY (id_seller) REFERENCES DimVendedores(id_seller),
+    FOREIGN KEY (OrderID) REFERENCES DimOrder(OrderID),
+	FOREIGN KEY (DateIDOrder) REFERENCES DimFecha(DateIDOrder),
+);
+
+select * from DimFecha ORDER BY DateIDOrder
+DELETE FROM [DB_SUPERSTOREG5].[dbo].[DimClientes]
+DELETE FROM [DB_SUPERSTOREG5].[dbo].[DimProductos]
+DELETE FROM [DB_SUPERSTOREG5].[dbo].[DimVendedores]
+DELETE FROM [DB_SUPERSTOREG5].[dbo].[DimFecha]
+DELETE FROM [DB_SUPERSTOREG5].[dbo].[DimOrder]
+
+SELECT * FROM HechosVentas
+SELECT * FROM DimProductos
+SELECT * FROM DimClientes
+SELECT * FROM DimFecha

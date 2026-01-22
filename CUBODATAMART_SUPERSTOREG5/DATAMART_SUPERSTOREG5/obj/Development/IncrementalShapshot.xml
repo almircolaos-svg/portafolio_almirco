@@ -1,0 +1,89 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>DATAMART_SUPERSTOREG5</Database>
+    <Server>DESKTOP-L8IFLL2\ALMIRCOSQL</Server>
+    <ConnectionString>Data Source=DESKTOP-L8IFLL2\ALMIRCOSQL;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>Default</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>fTZJeiebLREb3xhNsR8DgbD6ZF0=28/06/2024 00:06:4228/06/2024 00:06:42</TimeStamp>
+        <ID>
+          <String>DB SUPERSTOREG5</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>1vTZEdGd4fc1IOqjuZZoRMqzJOo=28/06/2024 00:06:5928/06/2024 00:06:59</TimeStamp>
+        <ID>
+          <String>DB SUPERSTOREG5</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Voyu3xzluSPTTdubKetxChX+0FA=28/06/2024 00:09:0228/06/2024 00:07:13</TimeStamp>
+        <ID>
+          <String>Dim Clientes</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>e7vUFnaB5cwTI6rMeS4hvmCbYZY=28/06/2024 00:09:1828/06/2024 00:07:13</TimeStamp>
+        <ID>
+          <String>Dim Order</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>rRBnh4tlUdm3FMNDfYyGKowgs2g=28/06/2024 00:09:2828/06/2024 00:07:13</TimeStamp>
+        <ID>
+          <String>Dim Productos</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>zcMk4vZXAjwb3zwc8UcfPNVSbCo=28/06/2024 00:09:4628/06/2024 00:07:13</TimeStamp>
+        <ID>
+          <String>Dim Fecha</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>vZRW9sGDPMpH+HJXEy0pgWjdybY=28/06/2024 00:09:5528/06/2024 00:07:13</TimeStamp>
+        <ID>
+          <String>Dim Vendedores</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>KYnV0mo1Zz+jK/kTf/LRLpoEmBs=28/06/2024 00:09:5528/06/2024 00:07:13ZOjRN1KFQksPJZJhj61cesms2eM=28/06/2024 00:07:1328/06/2024 00:07:13</TimeStamp>
+        <ID>
+          <String>DB SUPERSTOREG5</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>hvwPVAuwGetRA6dVt2bHDRJXN+g=27/06/2024 03:10:5927/06/2024 03:10:58</TimeStamp>
+      <ID>
+        <String>DATAMART_SUPERSTOREG5</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2024-06-28T05:10:39.666667Z</LastDeployed>
+</DeploymentSnapshot>

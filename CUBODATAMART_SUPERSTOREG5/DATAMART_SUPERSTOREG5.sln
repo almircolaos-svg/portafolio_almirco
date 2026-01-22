@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "DATAMART_SUPERSTOREG5", "DATAMART_SUPERSTOREG5\DATAMART_SUPERSTOREG5.dwproj", "{06D6FFC2-C945-4EA2-B5D3-2C45F53B9ACF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{06D6FFC2-C945-4EA2-B5D3-2C45F53B9ACF}.Development|Default.ActiveCfg = Development
+		{06D6FFC2-C945-4EA2-B5D3-2C45F53B9ACF}.Development|Default.Build.0 = Development
+		{06D6FFC2-C945-4EA2-B5D3-2C45F53B9ACF}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {59F9F441-C195-4375-A6FA-F4CE10B5D28E}
+	EndGlobalSection
+EndGlobal
