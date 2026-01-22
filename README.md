@@ -4,7 +4,7 @@ Repositorio de proyectos de análisis de datos.
 
 ## Proyecto: Superstore Data Mart & Sales Analysis
 
-Análisis de ventas usando un enfoque de Data Mart.
+Análisis de ventas y costos usando un enfoque de Data Mart.
 
 ### Herramientas
 - Archivo plano (CSV)
